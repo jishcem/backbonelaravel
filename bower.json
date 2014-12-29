@@ -1,0 +1,25 @@
+{
+  "name": "backbonelaravel",
+  "version": "0.0.0",
+  "authors": [
+    "jishcem <jishcem@gmail.com>"
+  ],
+  "description": "backbone and laravel with resetful routing",
+  "keywords": [
+    "backbone",
+    "laravel"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "~/vendor/js",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "1.1.2",
+    "jquery": "2.1.3"
+  }
+}
