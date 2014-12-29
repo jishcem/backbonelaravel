@@ -9,6 +9,6 @@ gulp.task('default', function(){
 				'./vendor/js/backbone/backbone.js'				
 			])
     		.pipe(concat('all.js'))
-    		.pipe(uglify())
+    		// .pipe(uglify())
     		.pipe(gulp.dest('./public/packages/js/'));
 });

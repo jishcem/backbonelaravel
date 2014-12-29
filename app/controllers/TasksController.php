@@ -20,7 +20,7 @@ class TasksController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+
 	}
 
 
@@ -31,7 +31,8 @@ class TasksController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$input = Input::all();
+		return Task::create($input);
 	}
 
 
@@ -43,7 +44,7 @@ class TasksController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		return Task::find($id);		
 	}
 
 
@@ -67,7 +68,10 @@ class TasksController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$input = Input::all();		
+		$task = Task::find($id);
+		$task->title = $input['title'];
+		$task->save();  
 	}
 
 
@@ -79,7 +83,7 @@ class TasksController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$task = Task::find($id)->delete();		
 	}
 
 
