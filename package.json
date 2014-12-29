@@ -1,0 +1,9 @@
+{
+	"name": "backbonelaravel",
+	"version": "0.0.0",
+	"dependencies": {
+		"gulp": "latest",
+		"gulp-concat": "latest",
+		"gulp-uglify": "latest"
+	}
+}
